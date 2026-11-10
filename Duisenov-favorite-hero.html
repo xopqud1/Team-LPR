@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің сүйікті комикс кейіпкерім — Spider-Man</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #e74c3c, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0c0;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-card h2 {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-card h2::before {
+            content: '🕷️';
+            font-size: 2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .info-item .label {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-item .value {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 1.5rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .description p {
+            margin-bottom: 1rem;
+        }
+
+        .abilities {
+            margin-top: 2rem;
+        }
+
+        .abilities h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .abilities ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+
+        .abilities li {
+            background: rgba(52, 152, 219, 0.15);
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .abilities li::before {
+            content: '⚡ ';
+        }
+
+        .reason {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .reason h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .reason p {
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 3rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.5rem;
+            background: #3498db;
+            color: #fff;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid, .abilities ul {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Менің сүйікті комикс кейіпкерім</h1>
+            <p>ЛПР 6 — Командная работа с GitHub</p>
+        </header>
+
+        <div class="hero-card">
+            <h2>Spider-Man (Человек-Паук)</h2>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Шын аты / Настоящее имя</div>
+                    <div class="value">Питер Паркер (Peter Parker)</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Баспагер / Издательство</div>
+                    <div class="value">Marvel Comics</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Алғаш пайда болды / Первое появление</div>
+                    <div class="value">Amazing Fantasy #15 (1962)</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Авторлар / Создатели</div>
+                    <div class="value">Стэн Ли, Стив Дитко</div>
+                </div>
+            </div>
+
+            <div class="description">
+                <p>
+                    Spider-Man — Marvel комикстеріндегі ең танымал суперқаһармандардың бірі. 
+                    Питер Паркер — Нью-Йоркте тұратын жас ғалым, оны радиоактивті өрмекші шаққаннан кейін 
+                    ерекше қабілеттерге ие болады.
+                </p>
+                <p>
+                    Ол адамдарға көмектеседі, қаланы зұлымдардан қорғайды және өзінің ұлы күші мен 
+                    жауапкершілігі арасындағы тепе-теңдікті сақтауға тырысады.
+                </p>
+            </div>
+        </div>
+
+        <div class="abilities">
+            <h3>🦸 Қабілеттері / Способности</h3>
+            <ul>
+                <li>Қабырғаларға жабысу</li>
+                <li>Өрмекші торын ату</li>
+                <li>Артық күш пен жылдамдық</li>
+                <li>Паук-чутьё (қауіпті сезу)</li>
+                <li>Акробатикалық ептілік</li>
+                <li>Ғылыми дарын</li>
+                <li>Веб-шутерлерді жасау</li>
+                <li>Жылдам жазылу қабілеті</li>
+            </ul>
+        </div>
+
+        <div class="reason">
+            <h3>💡 Неліктен маған ұнайды? / Почему он мне нравится?</h3>
+            <p>
+                Маған Spider-Man кейіпкері ұнайды, себебі ол — батыл, ақылды және жауапкершілігі мол адам. 
+                Ол суперқаһарман болғанымен, қарапайым адамның мәселелерін де бастан кешеді: оқу, жұмыс, 
+                достық пен отбасы. Оның ең маңызды ұраны: 
+                <strong>«Ұлы күшпен ұлы жауапкершілік келеді»</strong> 
+                (With great power comes great responsibility).
+            </p>
+            <p>
+                Бұл ұран маған үлкен серпін береді — біз де өз күшімізді жақсылық үшін қолдануымыз керек.
+            </p>
+        </div>
+
+        <footer>
+            <a href="index.html" class="back-link">← Басты бетке оралу / На главную</a>
+            <p style="margin-top: 1rem;">&copy; 2026 Duisenov — ЛПР 6 Team-LPR</p>
+        </footer>
+    </div>
+</body>
+</html>
