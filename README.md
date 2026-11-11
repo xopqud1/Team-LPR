@@ -28,3 +28,7 @@ Team-LPR/
 - CSS3 (Flexbox, Grid, Анимации)
 - JavaScript (DOM, IntersectionObserver)
 - Git & GitHub (Fork, Branch, Pull Request)
+
+## Зертханалық жұмыс №8
+
+[Исламбектің GitHub Issues, Kanban және Actions бойынша жұмысы мен тексеру нұсқаулығы](docs/lab-8-islambek.md).
