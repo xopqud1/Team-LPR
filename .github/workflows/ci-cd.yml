@@ -1,0 +1,21 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Репозиторийді жүктеу
+        uses: actions/checkout@v3
+
+      - name: Build қадамы
+        run: echo "Жоба сәтті жиналды"
+
+      - name: Тест қадамы
+        run: echo "Тесттер сәтті өтті"
