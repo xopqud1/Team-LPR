@@ -19,3 +19,10 @@ jobs:
 
       - name: Тест қадамы
         run: echo "Тесттер сәтті өтті"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Орналастыру
+        run: echo "Қосымша production ортасына орналастырылды"
