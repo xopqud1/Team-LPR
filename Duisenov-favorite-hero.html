@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Менің сүйікті комикс кейіпкерім — Spider-Man</title>
+    <title>Менің сүйікті комикс кейіпкерлерім — Spider-Man және Batman</title>
     <style>
         * {
             margin: 0;
@@ -64,6 +64,19 @@
         .hero-card h2::before {
             content: '🕷️';
             font-size: 2rem;
+        }
+
+        .hero-card.batman h2 { color: #f4c542; }
+        .hero-card.batman h2::before { content: '🦇'; }
+        .hero-card.batman .abilities h3,
+        .hero-card.batman .reason h3 { color: #f4c542; }
+        .hero-card.batman .abilities li {
+            background: rgba(244, 197, 66, 0.12);
+            border-left-color: #f4c542;
+        }
+        .hero-card.batman .reason {
+            background: rgba(244, 197, 66, 0.1);
+            border-color: rgba(244, 197, 66, 0.3);
         }
 
         .info-grid {
@@ -186,7 +199,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Менің сүйікті комикс кейіпкерім</h1>
+            <h1>Менің сүйікті комикс кейіпкерлерім</h1>
             <p>ЛПР 6 — Командная работа с GitHub</p>
         </header>
 
@@ -251,6 +264,55 @@
             <p>
                 Бұл ұран маған үлкен серпін береді — біз де өз күшімізді жақсылық үшін қолдануымыз керек.
             </p>
+        </div>
+
+        <div class="hero-card batman">
+            <h2>Batman (Бэтмен)</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Шын аты / Настоящее имя</div>
+                    <div class="value">Брюс Уэйн (Bruce Wayne)</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Баспагер / Издательство</div>
+                    <div class="value">DC Comics</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Алғаш пайда болды / Первое появление</div>
+                    <div class="value">Detective Comics #27 (1939)</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Авторлар / Создатели</div>
+                    <div class="value">Боб Кейн, Билл Фингер</div>
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    Batman — DC Comics әлеміндегі суперқаһарман. Оның шын аты — Брюс Уэйн.
+                    Ол Готэм қаласын қорғайды және қылмыскерлерге қарсы күреседі.
+                </p>
+                <p>
+                    Бэтменнің ерекше суперқабілеттері жоқ. Ол ақылын, детективтік дағдыларын,
+                    жаттығуын және арнайы технологияларын пайдаланады.
+                </p>
+            </div>
+            <div class="abilities">
+                <h3>🦇 Қабілеттері / Навыки</h3>
+                <ul>
+                    <li>Детективтік ойлау және бақылағыштық</li>
+                    <li>Жекпе-жек өнерін меңгерген</li>
+                    <li>Арнайы гаджеттер мен көліктерді қолданады</li>
+                    <li>Жасырын әрекет ету дағдылары</li>
+                </ul>
+            </div>
+            <div class="reason">
+                <h3>💡 Неліктен маған ұнайды? / Почему он мне нравится?</h3>
+                <p>
+                    Маған Бэтмен ұнайды, себебі ол ерекше күшке сүйенбей, ақылы мен табандылығы
+                    арқылы адамдарды қорғайды. Ол әділдік үшін күресіп, қиындықтарға қарамастан
+                    мақсатына берік болады.
+                </p>
+            </div>
         </div>
 
         <footer>
